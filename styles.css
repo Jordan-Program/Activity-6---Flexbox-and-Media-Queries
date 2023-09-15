@@ -1,0 +1,39 @@
+/* flex container */
+.flex-container 
+    {
+        display: flex;
+        background-color: rgb(153, 80, 80);
+        color: #ffffff;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+/* flex item */
+.flex-item 
+    {
+    border: 3px solid rgb(5, 0, 0);
+    padding: 5vw;
+    margin: 10px;
+    }
+
+/* media queries for max width 600px */
+@media screen and (max-width: 600px) 
+    {
+
+        /* Flex Container */
+        .flex-container 
+        {
+            background-color: rgb(80, 14, 14);
+            flex-direction:column-reverse;
+            justify-content: center;
+            align-items: stretch;
+        }
+    
+        /* flex item */
+        .flex-item 
+        {
+            border: 6px solid rgb(0, 0, 0);
+        }
+
+    }
